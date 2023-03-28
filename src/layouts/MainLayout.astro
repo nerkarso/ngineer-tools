@@ -9,6 +9,12 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title} | Ngineer Tools</title>
+    <style>
+      html,
+      body {
+        @apply bg-base-800 text-base-100 h-full;
+      }
+    </style>
   </head>
   <body>
     <slot />
