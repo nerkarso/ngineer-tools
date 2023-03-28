@@ -14,9 +14,22 @@ const { title } = Astro.props;
       body {
         @apply bg-base-800 text-base-100 h-full;
       }
+
+      body {
+        @apply flex flex-col;
+      }
     </style>
   </head>
   <body>
+    <header class="px-4 h-16 flex items-center gap-6 flex-shrink-0">
+      <a
+        href="/"
+        class="ring-1 ring-base-600 px-2 py-1 hover:border-primary-500 hover:ring-primary-500 rounded transition hover:ring-2 text-sm"
+      >
+        Home
+      </a>
+      <h4 class="font-bold text-lg">{title}</h4>
+    </header>
     <slot />
   </body>
 </html>

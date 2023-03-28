@@ -29,7 +29,7 @@ export default function Converter() {
   }
 
   return (
-    <div class="flex flex-col h-full p-4">
+    <div class="flex flex-col h-full px-4 pb-4">
       <div class="grid grid-cols-2 gap-4 flex-1">
         <div class="relative w-full">
           {error() && (
