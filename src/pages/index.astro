@@ -5,7 +5,9 @@ const links = [{ href: "/js-to-json", text: "JavaScript to JSON" }];
 ---
 
 <MainLayout title="Welcome">
-  <div class="grid grid-cols-6 px-4 pb-4">
+  <div
+    class="grid grid-cols-[repeat(auto-fit,minmax(min-content,200px))] px-4 pb-4"
+  >
     {
       links.map(({ href, text }) => (
         <a
