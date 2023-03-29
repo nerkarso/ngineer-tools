@@ -30,8 +30,14 @@ export default function Converter() {
 
   return (
     <div class="flex flex-col h-full px-4 pb-4">
-      <div class="grid grid-cols-2 gap-4 flex-1">
-        <div class="relative w-full">
+      <div class="grid md:grid-cols-2 md:grid-rows-none gap-4 flex-1 grid-rows-2">
+        <textarea
+          readOnly
+          placeholder="JSON output will appear here"
+          class="bg-base-800 rounded-md p-4 border border-base-700 focus:outline-none font-mono text-sm md:order-2"
+          value={output()}
+        />
+        <div class="relative w-full md:order-1">
           {error() && (
             <div class="absolute p-px bottom-0">
               <div class="py-2 px-3 flex items-center bg-base-900 rounded-b-md">
@@ -46,12 +52,6 @@ export default function Converter() {
             onInput={handleInputChange}
           />
         </div>
-        <textarea
-          readOnly
-          placeholder="JSON output will appear here"
-          class="bg-base-800 rounded-md p-4 border border-base-700 focus:outline-none font-mono text-sm"
-          value={output()}
-        />
       </div>
     </div>
   );
