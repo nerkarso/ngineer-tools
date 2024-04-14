@@ -17,3 +17,7 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm run build`     | Build your production site to `./dist/`          |
 | `pnpm run preview`   | Preview your build locally, before deploying     |
 | `pnpm run astro ...` | Run CLI commands like `astro add`, `astro check` |
+
+## Acknowledgement
+
+Inspired by [Easy Tools](https://github.com/shayant98/easy-tools) from [shayant98 (Shayant)](https://github.com/shayant98).
